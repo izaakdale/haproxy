@@ -1,0 +1,13 @@
+services:
+  app1:
+    image: service-barebones
+  app2:
+    image: service-barebones
+  app3:
+    image: service-barebones
+
+  proxy:
+    image: my-haproxy
+    ports:
+      - '8080:80'
+      - '8081:81'
